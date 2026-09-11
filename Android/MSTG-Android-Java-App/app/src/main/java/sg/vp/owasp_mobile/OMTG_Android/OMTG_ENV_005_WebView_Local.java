@@ -33,7 +33,9 @@ public class OMTG_ENV_005_WebView_Local extends AppCompatActivity {
 
         myWebView.getSettings().setJavaScriptEnabled(true);
 
-        myWebView.getSettings().setAllowFileAccessFromFileURLs(true);
+        myWebView.getSettings().setAllowFileAccessFromFileURLs(false);
+        myWebView.getSettings().setAllowUniversalAccessFromFileURLs(false);
+        myWebView.getSettings().setAllowFileAccess(false);
 
         myWebView.setWebChromeClient(new WebChromeClient());
 
